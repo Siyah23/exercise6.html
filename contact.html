@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you. Get in touch with us!</p>
+      </header>
+      <section class="contact-section">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="Name" placeholder="Enter your name"required>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email"required>
+          <label for="phone">Phone:</label>
+          <input type="tel" name="phone" pattern="[0-9]" id="phone" placeholder="Enter your phone number"required>
+          <label for="subject">Subject:</label>
+          <select name="subject" id="Subject" required>
+            <option value="Select">Select a Subject</option>
+            <option value="consultation">Consultation</option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="appointment">Appointment</option>
+          </select>
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" placeholder="Write your message" rows="5" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section class="schedule-section">
+        <h2>Appointment Schedule</h2>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Service</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>monday</td>
+                <td>09:00 AM</td>
+                <td>Consultation</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>11:00 AM</td>
+                <td>General Inquiry</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>02:00 PM</td>
+                <td>Support</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>10:00 AM</td>
+                <td>Appointment</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
